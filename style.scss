@@ -1,0 +1,109 @@
+.page-wrapper {
+  $grey-background: rgb(110, 110, 110);
+  $green-background: rgb(10, 110, 30);
+  
+  background-color: $grey-background;
+  
+  cursor: text;
+  
+  h3 {
+    font-family: Georgia;
+  }
+  
+  div {
+    color: black;
+    padding: 10px;
+    display: block;
+    float: center;
+    //border: 1px solid black;
+    box-sizing: border-box;
+  }
+  
+  .intro {
+    color: red;
+    background-color: $green-background;
+    font-size: 24px;
+    padding: 10px;
+    
+    h1 {
+      font-size: 48px;
+      font-family: Impact;
+    }
+    
+    h2 {
+      font-style: italic;
+    }
+      
+    header {
+      text-align: center;
+    }
+      
+    .summary{
+      color: blue;
+    }
+    
+    .summary, .preamble {
+      //width: $non-title-width;
+      border-bottom: 5px solid black;
+    }
+  }
+
+  .main{
+    div{
+      
+      //width: $non-title-width;
+      border-bottom: 5px solid black;
+      box-sizing: border-box;
+    }
+  }
+  
+  footer {
+    //width: $non-title-width;
+    text-align: center;
+    background-color: orange;
+  }
+  
+  abbr {
+    font-family: "Comic Sans", "Comic Sans MS", cursive;
+  }
+  
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 5px dashed rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    height: calc(100% - 20px);
+    /*
+    display: block;
+    position: fixed;
+    padding: 10px;
+    top: 10px;
+    right: 0%;
+    overflow-y: auto;
+    */
+      
+    .wrapper {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif');
+      //'By Marvel - Based upon a NASA image, see [1]., CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=20654992'
+      background-repeat: repeat;
+      background-position: left top;
+      div {
+        border-style: none;
+        cursor: ns-resize;
+        //background-color: $grey-background;
+        
+        //box-sizing: border-box;
+        //position: absolute;
+        //float: top;
+        //width: 100%;
+        color: blue;
+        //text-align: center;
+        
+        h3 {
+          text-decoration: underline;
+          color: white;
+          font-family: "Comic Sans MS", "Comic Sans", cursive;
+        }
+      }
+    }
+  }
+}
